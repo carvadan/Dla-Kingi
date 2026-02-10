@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffb6d5, #ffe6f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 380px;
+}
+
+.images img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #ff3d7f;
+  margin: 20px 0 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  height: 80px;
+}
+
+#yesBtn {
+  background: #ff3d7f;
+  color: white;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+#noBtn {
+  background: #eee;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  transition: left 0.5s ease, top 0.5s ease;
+}
+
+.heart {
+  position: absolute;
+  font-size: 22px;
+  animation: fly 4s linear forwards;
+}
+
+@keyframes fly {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-600px); opacity: 0; }
+}
