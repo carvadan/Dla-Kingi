@@ -15,7 +15,6 @@ const noTexts = [
   'Kurwa 😠',
   'Serio? 😒',
   'Wkurwiasz mnie! 🤬',
-  'Dziwka! 🙄',
 ];
 
 // 👉 ТУТ МОЖНО МЕШАТЬ ФОТО И GIF
@@ -102,3 +101,4 @@ yesBtn.addEventListener('click', () => {
 
     for (let i = 0; i < 30; i++) createHeart();
 });
+
